@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  
+  table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 90%;
+    grid-template-columns: 
+      minmax(150px, 0fr)
+      minmax(150px, 0fr)
+      minmax(150px, 0fr)
+      minmax(150px, 0fr)
+      minmax(250px, 0fr)
+      minmax(150px, 0fr)
+      minmax(150px, 0fr)
+      minmax(200px, 0fr)
+      minmax(150px, 0fr);
+  }
+  .tabell{
+    margin-left: 150px;
+    margin-right: auto;
+  }
+
+ 
+  
+  thead,
+  tbody,
+  tr {
+    display: contents;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  th {
+    position: sticky;
+    top: 0;
+    background: #45704a;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  th:last-child {
+    border: 0;
+  }
+  
+  td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000000;
+  }
+  
+  tr:nth-child(even) td {
+    background: #98da9d;
+  }
